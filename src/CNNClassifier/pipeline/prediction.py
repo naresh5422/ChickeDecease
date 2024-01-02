@@ -7,7 +7,7 @@ import os
 
 
 class PredictionPipeline:
-    def __inti__(self, filename):
+    def __init__(self, filename):
         self.filename = filename
 
     def predict(self):
@@ -20,7 +20,7 @@ class PredictionPipeline:
         result = np.argmax(model.predict(test_image), axis = 1)
         print(result)
 
-        if result[0] == 1;
+        if result[0] == 1:
             prediction = "Healthy"
             return [{"image":prediction}]
         else:

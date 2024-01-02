@@ -2,7 +2,7 @@ AUGMENTATION: True
 IMAGE_SIZE: [224,224,3] # As per VGG16 model
 BATCH_SIZE: 32 # with local machine it is enough  or have best machine increase size of batch
 INCLUDE_TOP: False
-EPOCHS: 5 # Sample for know
+EPOCHS: 3 # Sample for know
 CLASSES: 2
 WEIGHTS: imagenet
 LEARNING_RATE: 0.01
